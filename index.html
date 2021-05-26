@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de mapa Leaflet con capas de coropletas</title>     
+
+    <!-- Enlace a biblioteca JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <!-- Enlace a hoja CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    
+    <!-- Enlace a biblioteca JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>   
+
+    <!-- Enlace a complemento Leaflet-choropleth -->
+    <script src="js/choropleth.js"></script> 
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Estilos para la leyenda de Leaflet-choropleth -->
+	<style type="text/css">
+	.legend {
+		color: #555;
+		padding: 6px 8px;
+		font: 12px Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		background: white;
+		background: rgba(255,255,255,0.8);
+		box-shadow: 0 0 15px rgba(0,0,0,0.2);
+		border-radius: 5px;
+	}
+	.legend ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		clear: both;
+	}
+	.legend li {
+		display: inline-block;
+		width: 30px;
+		height: 22px;
+	}
+	.legend .min {
+		float: left;
+		padding-bottom: 5px;
+	}
+	.legend .max {
+		float: right;
+	}
+	</style>
+
+</head>
+<body>
+    <h1>Ejemplo de mapa Leaflet con capas de coropletas</h1>     
+
+    <a href="https://github.com/tpb729-desarrollosigweb-2021/ejemplo-mapa-leaflet-coropletas">Código fuente</a>
+    <p>
+    
+    <!-- Elemento div para contener el mapa Leaflet -->
+    <div id="mapid"></div>
+
+    <!-- Código JavaScript para generar y manejar el mapa Leaflet -->
+    <script src="js/scripts.js"></script>					
+</body>
+</html>
